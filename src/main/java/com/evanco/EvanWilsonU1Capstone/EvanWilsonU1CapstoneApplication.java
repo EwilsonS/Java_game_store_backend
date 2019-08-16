@@ -1,12 +1,8 @@
-# Java_game_store_backend
-Rest, mvc, mysql Java/Spring back end app. 
+package com.evanco.EvanWilsonU1Capstone;
 
-To use/test this app:  
-1. Clone repo and change applications.properties/ bootstrap.properties to reflect your mysql settings.
-1. Execute schema and data scripts in /planning  directory
-1. visit the following endpoints in postman (or similar)
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-``` java
 /**
  * @author Evan Wilson
  * @version 0.0.1
@@ -54,5 +50,11 @@ To use/test this app:
  *         "item_id": ,
  *         "quantity":
  */
+@SpringBootApplication
+public class EvanWilsonU1CapstoneApplication {
 
-```
+	public static void main(String[] args) {
+		SpringApplication.run(EvanWilsonU1CapstoneApplication.class, args);
+	}
+
+}
